@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test-desktop": "playwright test --project=\"Chrome Desktop\"",
     "test-api": "playwright test --project=Api"
   },
@@ -12,14 +13,14 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
     "@playwright/test": "^1.57.0",
     "@trivago/prettier-plugin-sort-imports": "^6.0.0",
     "@types/node": "^24.10.1",
-    "@typescript-eslint/eslint-plugin": "^8.48.0",
-    "@typescript-eslint/parser": "^8.48.0",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-playwright": "^2.4.0",
+    "jiti": "^2.6.1",
     "prettier": "3.7.3",
     "typescript-eslint": "^8.48.0"
   },
