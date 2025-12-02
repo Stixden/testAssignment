@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "types": ["node", "@playwright/test"],
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@api/*": ["app/api/*"],
+      "@data/*": ["app/data/*"],
+      "@fixtures/*": ["app/fixtures/*"],
+      "@pages/*": ["app/pages/*"],
+      "@components/*": ["app/pages/components/*"],
+      "@common/*": ["app/pages/common/*"],
+      "@utils/*": ["app/utils/*"]
+    }
+  },
+  "include": ["app/**/*", "tests/**/*", "playwright.config.ts"],
+  "exclude": ["node_modules", "playwright-report", "test-results"]
+}
